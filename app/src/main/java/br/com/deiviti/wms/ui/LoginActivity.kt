@@ -40,7 +40,9 @@ class LoginActivity : AppCompatActivity() {
                 ) {
                     if (response.isSuccessful) {
                         val intent = Intent(this@LoginActivity, ArmazemListActivity::class.java)
+                        intent.putExtra("TOKEN", response.body()!!.token)
                         startActivity(intent)
+                        finish()
                     } else {
                         val error = response.errorBody()!!.string()
                         val errorMessaage = JSONObject(error).getString("message")
@@ -51,7 +53,6 @@ class LoginActivity : AppCompatActivity() {
                 override fun onFailure(call: Call<UserResponse>, t: Throwable) {
                     Toast.makeText(this@LoginActivity, "Erro Servidor", Toast.LENGTH_SHORT).show()
                 }
-
             })
         }
     }

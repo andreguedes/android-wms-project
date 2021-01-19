@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.layout_armazem_item.view.*
 
 class ArmazemListAdapter : RecyclerView.Adapter<ArmazemListAdapter.ArmazemListViewHolder>() {
 
-    private val armazemListMock = ArmazemListMock.getListMock()
+    private var armazemList: MutableList<Armazem> = mutableListOf()
 
     // SOLID
     inner class ArmazemListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -25,15 +25,21 @@ class ArmazemListAdapter : RecyclerView.Adapter<ArmazemListAdapter.ArmazemListVi
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArmazemListViewHolder {
-        val layoutArmazemItem = LayoutInflater.from(parent.context).inflate(R.layout.layout_armazem_item, parent, false)
+        val layoutArmazemItem =
+            LayoutInflater.from(parent.context).inflate(R.layout.layout_armazem_item, parent, false)
         return ArmazemListViewHolder(layoutArmazemItem)
     }
 
     override fun onBindViewHolder(holder: ArmazemListViewHolder, position: Int) {
-        val armazemItem = armazemListMock[position]
+        val armazemItem = armazemList[position]
         holder.geraUmItemDaLista(armazemItem)
     }
 
-    override fun getItemCount() = armazemListMock.size
+    override fun getItemCount() = armazemList.size
+
+    fun update(armazens: List<Armazem>) {
+        armazemList.addAll(armazens)
+        notifyDataSetChanged()
+    }
 
 }

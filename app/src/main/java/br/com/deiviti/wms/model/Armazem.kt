@@ -1,3 +1,9 @@
 package br.com.deiviti.wms.model
 
-data class Armazem(val code: String, val name: String, val flag: String)
+import com.google.gson.annotations.SerializedName
+
+data class Armazem(
+    @SerializedName("id") val code: String,
+    @SerializedName("nome") val name: String,
+    @SerializedName("lerVolumeSeparacao") val flag: String
+)
