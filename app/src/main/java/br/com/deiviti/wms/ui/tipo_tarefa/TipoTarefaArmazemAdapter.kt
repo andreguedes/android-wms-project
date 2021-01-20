@@ -10,14 +10,7 @@ import kotlinx.android.synthetic.main.item_tipo_tarefa_armazem.view.*
 
 class TipoTarefaArmazemAdapter : RecyclerView.Adapter<TipoTarefaArmazemAdapter.TipoTarefaArmazemViewHolder>() {
 
-    private val tiposTarefaArmazemList = listOf(
-        TipoTarefaArmazem(1, "Recebimento"),
-        TipoTarefaArmazem(2, "Conferência"),
-        TipoTarefaArmazem(3, "Armazenagem"),
-        TipoTarefaArmazem(4, "Separação"),
-        TipoTarefaArmazem(5, "Etiquetagem"),
-        TipoTarefaArmazem(6, "Configurações"),
-    )
+    private val tiposTarefaArmazemList = mutableListOf<TipoTarefaArmazem>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TipoTarefaArmazemViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -31,11 +24,16 @@ class TipoTarefaArmazemAdapter : RecyclerView.Adapter<TipoTarefaArmazemAdapter.T
 
     override fun getItemCount() = tiposTarefaArmazemList.size
 
+    fun update(tiposTarefaArmazem: List<TipoTarefaArmazem>) {
+        tiposTarefaArmazemList.addAll(tiposTarefaArmazem)
+        notifyDataSetChanged()
+    }
+
     inner class TipoTarefaArmazemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun geraUmItemDaLista(tipoTarefaArmazem: TipoTarefaArmazem) {
             with(itemView) {
-                txt_tipo_tarefa.text = tipoTarefaArmazem.description
+                txt_tipo_tarefa.text = tipoTarefaArmazem.descricao
             }
         }
 
