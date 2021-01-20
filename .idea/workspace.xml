@@ -6,19 +6,18 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bae6ab10-2da9-41fc-b209-c43755c69ceb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/data/WmsRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/data/WmsRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/model/Armazem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/model/Armazem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/service/WmsApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/service/WmsApi.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/LoginActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/armazem/ArmazemListActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/armazem/ArmazemListActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/armazem/ArmazemListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/armazem/ArmazemListAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/armazem/ArmazemListMock.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +36,9 @@
         <option value="Kotlin Interface" />
         <option value="Kotlin Object" />
         <option value="Kotlin Class" />
+        <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -52,11 +54,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/values-en" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/values-en" />
+    </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="br.com.deiviti.wms.model" />
+      <recent name="br.com.deiviti.wms.ui.tipo_tarefa" />
     </key>
   </component>
   <component name="RunManager">
@@ -139,29 +146,43 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1607" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1611015823906">
-      <screen x="1280" y="23" width="1366" height="745" />
+    <state x="306" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1611103683123">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state x="306" y="122" key="#com.intellij.ide.util.MemberChooser/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611103683123" />
     <state x="1607" y="118" key="#com.intellij.ide.util.MemberChooser/1280.23.1366.745/0.23.1280.777@1280.23.1366.745" timestamp="1611015823906" />
-    <state x="1339" y="178" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1610586153410">
-      <screen x="1280" y="23" width="1366" height="745" />
+    <state x="55" y="185" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1611103867834">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state x="55" y="185" key="#com.intellij.ide.util.PackageChooserDialog/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611103867834" />
     <state x="1339" y="178" key="#com.intellij.ide.util.PackageChooserDialog/1280.23.1366.745/0.23.1280.777@1280.23.1366.745" timestamp="1610586153410" />
-    <state width="1053" height="173" key="GridCell.Tab.0.bottom" timestamp="1610588981854">
-      <screen x="1280" y="23" width="1366" height="745" />
+    <state x="228" y="173" key="AndroidCreateResourceFileDialog" timestamp="1611101757033">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state x="228" y="173" key="AndroidCreateResourceFileDialog/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611101757033" />
+    <state width="1236" height="329" key="GridCell.Tab.0.bottom" timestamp="1611104457020">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1236" height="329" key="GridCell.Tab.0.bottom/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611104457020" />
     <state width="1053" height="173" key="GridCell.Tab.0.bottom/1280.23.1366.745/0.23.1280.777@1280.23.1366.745" timestamp="1610588981854" />
-    <state width="1053" height="173" key="GridCell.Tab.0.center" timestamp="1610588981853">
-      <screen x="1280" y="23" width="1366" height="745" />
+    <state width="1236" height="329" key="GridCell.Tab.0.center" timestamp="1611104457020">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state width="1236" height="329" key="GridCell.Tab.0.center/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611104457020" />
     <state width="1053" height="173" key="GridCell.Tab.0.center/1280.23.1366.745/0.23.1280.777@1280.23.1366.745" timestamp="1610588981853" />
-    <state width="1053" height="173" key="GridCell.Tab.0.left" timestamp="1610588981852">
-      <screen x="1280" y="23" width="1366" height="745" />
+    <state width="1236" height="329" key="GridCell.Tab.0.left" timestamp="1611104457019">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state width="1236" height="329" key="GridCell.Tab.0.left/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611104457019" />
     <state width="1053" height="173" key="GridCell.Tab.0.left/1280.23.1366.745/0.23.1280.777@1280.23.1366.745" timestamp="1610588981852" />
-    <state width="1053" height="173" key="GridCell.Tab.0.right" timestamp="1610588981853">
-      <screen x="1280" y="23" width="1366" height="745" />
+    <state width="1236" height="329" key="GridCell.Tab.0.right" timestamp="1611104457020">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
+    <state width="1236" height="329" key="GridCell.Tab.0.right/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611104457020" />
     <state width="1053" height="173" key="GridCell.Tab.0.right/1280.23.1366.745/0.23.1280.777@1280.23.1366.745" timestamp="1610588981853" />
+    <state x="141" y="34" key="SettingsEditor" timestamp="1611099638987">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="141" y="34" key="SettingsEditor/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611099638987" />
   </component>
 </project>

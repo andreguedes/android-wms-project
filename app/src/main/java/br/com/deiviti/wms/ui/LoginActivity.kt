@@ -40,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
                 ) {
                     if (response.isSuccessful) {
                         val intent = Intent(this@LoginActivity, ArmazemListActivity::class.java)
-                        intent.putExtra("TOKEN", response.body()!!.token)
+                        intent.putExtra(ArmazemListActivity.EXTRA_TOKEN, response.body()!!.token)
                         startActivity(intent)
                         finish()
                     } else {

@@ -8,7 +8,9 @@ import br.com.deiviti.wms.R
 import br.com.deiviti.wms.model.Armazem
 import kotlinx.android.synthetic.main.layout_armazem_item.view.*
 
-class ArmazemListAdapter : RecyclerView.Adapter<ArmazemListAdapter.ArmazemListViewHolder>() {
+class ArmazemListAdapter(
+    val clickListener: (Armazem) -> Unit
+) : RecyclerView.Adapter<ArmazemListAdapter.ArmazemListViewHolder>() {
 
     private var armazemList: MutableList<Armazem> = mutableListOf()
 
@@ -19,6 +21,9 @@ class ArmazemListAdapter : RecyclerView.Adapter<ArmazemListAdapter.ArmazemListVi
             with(itemView) {
                 txt_armazem_id.text = armazem.code
                 txt_armazem_nome.text = armazem.name
+            }
+            itemView.setOnClickListener {
+                clickListener.invoke(armazem)
             }
         }
 

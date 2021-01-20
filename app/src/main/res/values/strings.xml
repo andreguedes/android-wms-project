@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WMS</string>
+
+    <string name="act_tipo_tarefa_armazem_description">Selecione a tarefa que deseja realizar</string>
 </resources>
