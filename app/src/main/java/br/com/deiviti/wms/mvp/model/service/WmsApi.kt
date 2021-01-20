@@ -1,9 +1,9 @@
-package br.com.deiviti.wms.service
+package br.com.deiviti.wms.mvp.model.service
 
-import br.com.deiviti.wms.model.Armazem
-import br.com.deiviti.wms.model.TipoTarefaArmazem
-import br.com.deiviti.wms.model.UserRequest
-import br.com.deiviti.wms.model.UserResponse
+import br.com.deiviti.wms.mvp.model.shared.Armazem
+import br.com.deiviti.wms.mvp.model.shared.TipoTarefaArmazem
+import br.com.deiviti.wms.mvp.model.shared.UserRequest
+import br.com.deiviti.wms.mvp.model.shared.UserResponse
 import retrofit2.Call
 import retrofit2.http.*
 

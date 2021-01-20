@@ -1,11 +1,11 @@
-package br.com.deiviti.wms.ui.tipo_tarefa
+package br.com.deiviti.wms.mvp.view.ui.tipo_tarefa
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.com.deiviti.wms.R
-import br.com.deiviti.wms.model.TipoTarefaArmazem
+import br.com.deiviti.wms.mvp.model.shared.TipoTarefaArmazem
 import kotlinx.android.synthetic.main.item_tipo_tarefa_armazem.view.*
 
 class TipoTarefaArmazemAdapter : RecyclerView.Adapter<TipoTarefaArmazemAdapter.TipoTarefaArmazemViewHolder>() {

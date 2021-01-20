@@ -1,4 +1,4 @@
-package br.com.deiviti.wms.ui.armazem
+package br.com.deiviti.wms.mvp.view.ui.armazem
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,9 +6,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.deiviti.wms.R
-import br.com.deiviti.wms.data.WmsRepository
-import br.com.deiviti.wms.model.Armazem
-import br.com.deiviti.wms.ui.tipo_tarefa.TipoTarefaArmazemActivity
+import br.com.deiviti.wms.mvp.model.data.WmsRepository
+import br.com.deiviti.wms.mvp.model.shared.Armazem
+import br.com.deiviti.wms.mvp.view.ui.tipo_tarefa.TipoTarefaArmazemActivity
 import kotlinx.android.synthetic.main.activity_armazem_list.*
 import retrofit2.Call
 import retrofit2.Callback

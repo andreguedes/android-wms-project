@@ -1,7 +1,7 @@
-package br.com.deiviti.wms.data
+package br.com.deiviti.wms.mvp.model.data
 
-import br.com.deiviti.wms.model.UserRequest
-import br.com.deiviti.wms.service.RetrofitClient
+import br.com.deiviti.wms.mvp.model.shared.UserRequest
+import br.com.deiviti.wms.mvp.model.service.RetrofitClient
 
 class WmsRepository {
 

@@ -1,4 +1,4 @@
-package br.com.deiviti.wms.ui.tipo_tarefa
+package br.com.deiviti.wms.mvp.view.ui.tipo_tarefa
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -6,9 +6,9 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import br.com.deiviti.wms.R
-import br.com.deiviti.wms.data.WmsRepository
-import br.com.deiviti.wms.model.Armazem
-import br.com.deiviti.wms.model.TipoTarefaArmazem
+import br.com.deiviti.wms.mvp.model.data.WmsRepository
+import br.com.deiviti.wms.mvp.model.shared.Armazem
+import br.com.deiviti.wms.mvp.model.shared.TipoTarefaArmazem
 import kotlinx.android.synthetic.main.activity_tipo_tarefa_armazem.*
 import retrofit2.Call
 import retrofit2.Callback

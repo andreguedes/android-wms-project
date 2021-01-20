@@ -10,15 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WMS" >
 
-        <activity android:name=".ui.LoginActivity">
+        <activity android:name="br.com.deiviti.wms.mvp.view.ui.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.armazem.ArmazemListActivity" />
-        <activity android:name=".ui.tipo_tarefa.TipoTarefaArmazemActivity" />
+        <activity android:name="br.com.deiviti.wms.mvp.view.ui.armazem.ArmazemListActivity" />
+        <activity android:name="br.com.deiviti.wms.mvp.view.ui.tipo_tarefa.TipoTarefaArmazemActivity" />
 
     </application>
 </manifest>

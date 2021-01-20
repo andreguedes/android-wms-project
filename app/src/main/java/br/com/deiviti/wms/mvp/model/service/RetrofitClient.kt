@@ -1,4 +1,4 @@
-package br.com.deiviti.wms.service
+package br.com.deiviti.wms.mvp.model.service
 
 import br.com.deiviti.wms.BuildConfig
 import okhttp3.OkHttpClient

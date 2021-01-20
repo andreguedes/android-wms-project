@@ -1,11 +1,11 @@
-package br.com.deiviti.wms.ui.armazem
+package br.com.deiviti.wms.mvp.view.ui.armazem
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.com.deiviti.wms.R
-import br.com.deiviti.wms.model.Armazem
+import br.com.deiviti.wms.mvp.model.shared.Armazem
 import kotlinx.android.synthetic.main.layout_armazem_item.view.*
 
 class ArmazemListAdapter(

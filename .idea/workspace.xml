@@ -11,14 +11,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bae6ab10-2da9-41fc-b209-c43755c69ceb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/login/LoginActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/data/WmsRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/data/WmsRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/model/TipoTarefaArmazem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/model/TipoTarefaArmazem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/service/WmsApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/service/WmsApi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/tipo_tarefa/TipoTarefaArmazemActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/tipo_tarefa/TipoTarefaArmazemActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/tipo_tarefa/TipoTarefaArmazemAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/tipo_tarefa/TipoTarefaArmazemAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/data/WmsRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/data/WmsRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/model/Armazem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/shared/Armazem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/model/ErrorMessage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/shared/ErrorMessage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/model/TipoTarefaArmazem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/shared/TipoTarefaArmazem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/model/UserRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/shared/UserRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/model/UserResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/shared/UserResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/service/RetrofitClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/service/RetrofitClient.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/service/WmsApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/service/WmsApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/LoginActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/armazem/ArmazemListActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/armazem/ArmazemListActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/armazem/ArmazemListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/armazem/ArmazemListAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/tipo_tarefa/TipoTarefaArmazemActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/tipo_tarefa/TipoTarefaArmazemActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/ui/tipo_tarefa/TipoTarefaArmazemAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/tipo_tarefa/TipoTarefaArmazemAdapter.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +42,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Interface" />
         <option value="Kotlin Object" />
-        <option value="Kotlin Class" />
         <option value="valueResourceFile" />
         <option value="layoutResourceFile" />
         <option value="resourceFile" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -147,16 +155,24 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="306" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1611181864514">
+    <state x="306" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1611185318676">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="306" y="122" key="#com.intellij.ide.util.MemberChooser/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611181864514" />
+    <state x="306" y="122" key="#com.intellij.ide.util.MemberChooser/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611185318676" />
     <state x="1607" y="118" key="#com.intellij.ide.util.MemberChooser/1280.23.1366.745/0.23.1280.777@1280.23.1366.745" timestamp="1611015823906" />
     <state x="55" y="185" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1611103867834">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="55" y="185" key="#com.intellij.ide.util.PackageChooserDialog/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611103867834" />
     <state x="1339" y="178" key="#com.intellij.ide.util.PackageChooserDialog/1280.23.1366.745/0.23.1280.777@1280.23.1366.745" timestamp="1610586153410" />
+    <state x="105" y="343" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1611183721470">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="105" y="343" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611183721470" />
+    <state x="399" y="198" width="490" height="427" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1611185465797">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="399" y="198" width="490" height="427" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611185465797" />
     <state x="228" y="173" key="AndroidCreateResourceFileDialog" timestamp="1611101757033">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -185,6 +201,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="141" y="34" key="SettingsEditor/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611105997312" />
+    <state x="424" y="217" key="refactoring.ChangeSignatureDialog" timestamp="1611185024601">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="424" y="217" key="refactoring.ChangeSignatureDialog/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611185024601" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1611182199074">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

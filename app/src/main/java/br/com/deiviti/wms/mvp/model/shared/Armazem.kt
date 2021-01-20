@@ -1,4 +1,4 @@
-package br.com.deiviti.wms.model
+package br.com.deiviti.wms.mvp.model.shared
 
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
