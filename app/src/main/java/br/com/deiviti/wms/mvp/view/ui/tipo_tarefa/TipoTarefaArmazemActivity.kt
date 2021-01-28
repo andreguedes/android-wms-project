@@ -1,5 +1,6 @@
 package br.com.deiviti.wms.mvp.view.ui.tipo_tarefa
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
@@ -9,6 +10,7 @@ import br.com.deiviti.wms.R
 import br.com.deiviti.wms.mvp.model.data.WmsRepository
 import br.com.deiviti.wms.mvp.model.shared.Armazem
 import br.com.deiviti.wms.mvp.model.shared.TipoTarefaArmazem
+import br.com.deiviti.wms.mvp.view.ui.tarefa_armazenagem.TarefaArmazenagemActivity
 import kotlinx.android.synthetic.main.activity_tipo_tarefa_armazem.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -50,7 +52,19 @@ class TipoTarefaArmazemActivity : AppCompatActivity() {
         armazem = intent.getSerializableExtra(EXTRA_ARMAZEM) as Armazem
         setTipoTarefaArmazemTitle(armazem)
 
-        tipoTarefaArmazemAdapter = TipoTarefaArmazemAdapter()
+        tipoTarefaArmazemAdapter = TipoTarefaArmazemAdapter {
+            // TODO Implementar
+            if (it == 3) {
+                val intent = Intent(this, TarefaArmazenagemActivity::class.java)
+                intent.putExtra(TarefaArmazenagemActivity.ARMAZEM_ID, armazem.code.toInt())
+                startActivity(intent)
+            } else {
+                Toast.makeText(
+                    this@TipoTarefaArmazemActivity,
+                    "Tipo de tarefa ainda não implementado", Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
 
         rv_tipos_tarefa_armazem.apply {
             this.layoutManager = GridLayoutManager(this@TipoTarefaArmazemActivity, 2)
@@ -75,9 +89,11 @@ class TipoTarefaArmazemActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<List<TipoTarefaArmazem>>, t: Throwable) {
-                Toast.makeText(this@TipoTarefaArmazemActivity,
+                Toast.makeText(
+                    this@TipoTarefaArmazemActivity,
                     "Erro ao carregar tipos de tarefas para o armazem ${armazem.name}",
-                    Toast.LENGTH_SHORT).show()
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         })
     }

@@ -8,7 +8,9 @@ import br.com.deiviti.wms.R
 import br.com.deiviti.wms.mvp.model.shared.TipoTarefaArmazem
 import kotlinx.android.synthetic.main.item_tipo_tarefa_armazem.view.*
 
-class TipoTarefaArmazemAdapter : RecyclerView.Adapter<TipoTarefaArmazemAdapter.TipoTarefaArmazemViewHolder>() {
+class TipoTarefaArmazemAdapter(
+    val callback: (Int) -> Unit
+) : RecyclerView.Adapter<TipoTarefaArmazemAdapter.TipoTarefaArmazemViewHolder>() {
 
     private val tiposTarefaArmazemList = mutableListOf<TipoTarefaArmazem>()
 
@@ -34,6 +36,9 @@ class TipoTarefaArmazemAdapter : RecyclerView.Adapter<TipoTarefaArmazemAdapter.T
         fun geraUmItemDaLista(tipoTarefaArmazem: TipoTarefaArmazem) {
             with(itemView) {
                 txt_tipo_tarefa.text = tipoTarefaArmazem.descricao
+            }
+            itemView.setOnClickListener {
+                callback.invoke(tipoTarefaArmazem.id)
             }
         }
 

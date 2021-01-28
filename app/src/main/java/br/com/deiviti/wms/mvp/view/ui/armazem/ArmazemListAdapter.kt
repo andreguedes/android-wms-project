@@ -31,7 +31,7 @@ class ArmazemListAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArmazemListViewHolder {
         val layoutArmazemItem =
-            LayoutInflater.from(parent.context).inflate(R.layout.layout_armazem_item, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.item_layout_armazem, parent, false)
         return ArmazemListViewHolder(layoutArmazemItem)
     }
 

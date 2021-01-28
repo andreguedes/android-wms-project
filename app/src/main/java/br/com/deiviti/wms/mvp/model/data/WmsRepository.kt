@@ -11,6 +11,8 @@ class WmsRepository {
 
     fun getTiposTarefa(tokenExtra: String, idArmazem: Int) = getRetrofitClient().getTiposTarefa(tokenExtra, idArmazem)
 
+    fun getArmazenagens(idArmazem: Int) = getRetrofitClient().getArmazenagens(idArmazem = idArmazem)
+
     private fun getRetrofitClient() = RetrofitClient.getClient()
 
 }

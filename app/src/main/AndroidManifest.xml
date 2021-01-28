@@ -19,6 +19,7 @@
 
         <activity android:name="br.com.deiviti.wms.mvp.view.ui.armazem.ArmazemListActivity" />
         <activity android:name="br.com.deiviti.wms.mvp.view.ui.tipo_tarefa.TipoTarefaArmazemActivity" />
+        <activity android:name=".mvp.view.ui.tarefa_armazenagem.TarefaArmazenagemActivity" />
 
     </application>
 </manifest>
