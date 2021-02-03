@@ -2,12 +2,13 @@ package br.com.deiviti.wms.mvp.view.ui.login
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.com.deiviti.wms.R
+import br.com.deiviti.wms.extensions.customToast
 import br.com.deiviti.wms.mvp.presenter.login.LoginContract
 import br.com.deiviti.wms.mvp.presenter.login.LoginPresenter
 import br.com.deiviti.wms.mvp.view.ui.armazem.ArmazemListActivity
+import br.com.deiviti.wms.mvp.view.utils.CustomProgressDialog
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity(), LoginContract.View {
@@ -22,7 +23,7 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
     override fun onResume() {
         super.onResume()
 
-        presenter = LoginPresenter(this@LoginActivity)
+        presenter = LoginPresenter(this, this@LoginActivity)
 
         btn_login.setOnClickListener {
             presenter.postLogin(
@@ -33,7 +34,7 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
     }
 
     override fun showServerError() {
-        Toast.makeText(this@LoginActivity, "Erro Servidor", Toast.LENGTH_SHORT).show()
+        customToast(this, "Erro Servidor")
     }
 
     override fun initializeArmazemListActivity(token: String) {
@@ -44,7 +45,7 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
     }
 
     override fun showErrorMessage(errorMessage: String) {
-        Toast.makeText(this@LoginActivity, errorMessage, Toast.LENGTH_SHORT).show()
+        CustomProgressDialog.showToast(this, errorMessage)
     }
 
 }

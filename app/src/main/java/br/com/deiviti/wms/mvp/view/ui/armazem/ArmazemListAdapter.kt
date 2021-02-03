@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.com.deiviti.wms.R
 import br.com.deiviti.wms.mvp.model.shared.Armazem
-import kotlinx.android.synthetic.main.layout_armazem_item.view.*
+import kotlinx.android.synthetic.main.item_layout_armazem.view.*
 
 class ArmazemListAdapter(
     val clickListener: (Armazem) -> Unit

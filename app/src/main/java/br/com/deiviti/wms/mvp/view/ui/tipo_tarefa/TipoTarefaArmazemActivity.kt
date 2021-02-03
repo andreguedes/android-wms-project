@@ -31,6 +31,7 @@ class TipoTarefaArmazemActivity : AppCompatActivity() {
         supportActionBar?.apply {
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
+            setLogo(android.R.drawable.ic_dialog_alert)
         }
     }
 
