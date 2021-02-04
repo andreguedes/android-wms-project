@@ -19,7 +19,7 @@ class ArmazemListAdapter(
 
         fun geraUmItemDaLista(armazem: Armazem) {
             with(itemView) {
-                txt_armazem_id.text = armazem.code
+                txt_armazem_id.text = armazem.code.toString()
                 txt_armazem_nome.text = armazem.name
             }
             itemView.setOnClickListener {

@@ -9,6 +9,7 @@ import br.com.deiviti.wms.mvp.presenter.login.LoginContract
 import br.com.deiviti.wms.mvp.presenter.login.LoginPresenter
 import br.com.deiviti.wms.mvp.view.ui.armazem.ArmazemListActivity
 import br.com.deiviti.wms.mvp.view.utils.CustomProgressDialog
+import br.com.deiviti.wms.preferences.CustomPreferences
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity(), LoginContract.View {
@@ -31,6 +32,15 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
                 edt_password.text.toString()
             )
         }
+
+        val username = CustomPreferences.getStringPreferences(this, CustomPreferences.USERNAME)
+        val password = CustomPreferences.getStringPreferences(this, CustomPreferences.PASSWORD)
+        if (username != null && password != null) {
+            presenter.postLogin(
+                username,
+                password
+            )
+        }
     }
 
     override fun showServerError() {
@@ -38,6 +48,17 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
     }
 
     override fun initializeArmazemListActivity(token: String) {
+        CustomPreferences.putStringPreferences(
+            this,
+            CustomPreferences.USERNAME,
+            edt_username.text.toString()
+        )
+        CustomPreferences.putStringPreferences(
+            this,
+            CustomPreferences.PASSWORD,
+            edt_password.text.toString()
+        )
+
         val intent = Intent(this@LoginActivity, ArmazemListActivity::class.java)
         intent.putExtra(ArmazemListActivity.EXTRA_TOKEN, token)
         startActivity(intent)

@@ -11,6 +11,7 @@ import br.com.deiviti.wms.mvp.model.data.WmsRepository
 import br.com.deiviti.wms.mvp.model.shared.Armazem
 import br.com.deiviti.wms.mvp.model.shared.TipoTarefaArmazem
 import br.com.deiviti.wms.mvp.view.ui.tarefa_armazenagem.TarefaArmazenagemActivity
+import br.com.deiviti.wms.preferences.CustomPreferences
 import kotlinx.android.synthetic.main.activity_tipo_tarefa_armazem.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -101,6 +102,7 @@ class TipoTarefaArmazemActivity : AppCompatActivity() {
 
     private fun setTipoTarefaArmazemTitle(armazem: Armazem) {
         title = armazem.name + ": " + armazem.code
+//        title = CustomPreferences.getStringPreferences(this, CustomPreferences.USERNAME)
     }
 
     private fun updateAdapter(tiposTarefaArmazem: List<TipoTarefaArmazem>) {
