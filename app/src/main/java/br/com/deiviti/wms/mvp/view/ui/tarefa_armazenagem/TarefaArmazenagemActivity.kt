@@ -33,6 +33,10 @@ class TarefaArmazenagemActivity : AppCompatActivity() {
 
         rv_tarefa_armazem.layoutManager = LinearLayoutManager(this)
         rv_tarefa_armazem.adapter = adapter
+
+        btn_filter.setOnClickListener {
+            adapter.filter("1234455566")
+        }
     }
 
     private fun initData() {

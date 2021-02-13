@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.item_tarefa_armazenagem.view.*
 
 class ArmazenagemAdapter : RecyclerView.Adapter<ArmazenagemAdapter.ArmazeganemViewHolder>() {
 
-    private val armazenagensList = mutableListOf<Armazenagens>()
+    private var armazenagensList = mutableListOf<Armazenagens>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArmazeganemViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -27,6 +27,12 @@ class ArmazenagemAdapter : RecyclerView.Adapter<ArmazenagemAdapter.ArmazeganemVi
     fun update(armazenagensList: List<Armazenagens>) {
         this.armazenagensList.addAll(armazenagensList)
         notifyDataSetChanged()
+    }
+
+    fun filter(code: String): Armazenagens {
+        return armazenagensList.first {
+            it.codigoBarrasEnderecoOrigem == code
+        }
     }
 
     inner class ArmazeganemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
