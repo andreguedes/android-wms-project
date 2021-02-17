@@ -12,9 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bae6ab10-2da9-41fc-b209-c43755c69ceb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/presenter/login/LoginPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/presenter/login/LoginPresenter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/tarefa_armazenagem/ArmazenagemAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/tarefa_armazenagem/ArmazenagemAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/tarefa_armazenagem/TarefaArmazenagemActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/tarefa_armazenagem/TarefaArmazenagemActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarefa_armazenagem.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tarefa_armazenagem.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

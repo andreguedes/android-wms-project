@@ -1,6 +1,5 @@
 package br.com.deiviti.wms.mvp.presenter.login
 
-import android.app.ProgressDialog
 import android.content.Context
 import br.com.deiviti.wms.mvp.model.data.WmsRepository
 import br.com.deiviti.wms.mvp.model.shared.UserRequest

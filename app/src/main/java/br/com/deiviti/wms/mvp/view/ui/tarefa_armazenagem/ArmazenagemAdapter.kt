@@ -29,8 +29,8 @@ class ArmazenagemAdapter : RecyclerView.Adapter<ArmazenagemAdapter.ArmazeganemVi
         notifyDataSetChanged()
     }
 
-    fun filter(code: String): Armazenagens {
-        return armazenagensList.first {
+    fun filter(code: String): Armazenagens? {
+        return armazenagensList.firstOrNull {
             it.codigoBarrasEnderecoOrigem == code
         }
     }
