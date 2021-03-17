@@ -9,7 +9,7 @@ import br.com.deiviti.wms.mvp.model.shared.TipoTarefaArmazem
 import kotlinx.android.synthetic.main.item_tipo_tarefa_armazem.view.*
 
 class TipoTarefaArmazemAdapter(
-    val callback: (Int) -> Unit
+    val callback: (String) -> Unit
 ) : RecyclerView.Adapter<TipoTarefaArmazemAdapter.TipoTarefaArmazemViewHolder>() {
 
     private val tiposTarefaArmazemList = mutableListOf<TipoTarefaArmazem>()
@@ -28,8 +28,14 @@ class TipoTarefaArmazemAdapter(
 
     fun update(tiposTarefaArmazem: List<TipoTarefaArmazem>) {
         tiposTarefaArmazemList.addAll(tiposTarefaArmazem)
+        tiposTarefaArmazemList.addAll(getNewTipoTarefaArmazem())
         notifyDataSetChanged()
     }
+
+    private fun getNewTipoTarefaArmazem() = listOf(
+            TipoTarefaArmazem(100, "CCB", "Consulta Código de Barras"),
+            TipoTarefaArmazem(101, "CFG", "Configurações")
+        )
 
     inner class TipoTarefaArmazemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
@@ -38,7 +44,7 @@ class TipoTarefaArmazemAdapter(
                 txt_tipo_tarefa.text = tipoTarefaArmazem.descricao
             }
             itemView.setOnClickListener {
-                callback.invoke(tipoTarefaArmazem.id)
+                callback.invoke(tipoTarefaArmazem.sigla)
             }
         }
 

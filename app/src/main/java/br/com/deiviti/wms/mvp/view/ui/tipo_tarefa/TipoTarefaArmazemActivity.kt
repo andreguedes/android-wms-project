@@ -55,17 +55,7 @@ class TipoTarefaArmazemActivity : AppCompatActivity() {
         setTipoTarefaArmazemTitle(armazem)
 
         tipoTarefaArmazemAdapter = TipoTarefaArmazemAdapter {
-            // TODO Implementar
-            if (it == 3) {
-                val intent = Intent(this, TarefaArmazenagemActivity::class.java)
-                intent.putExtra(TarefaArmazenagemActivity.ARMAZEM_ID, armazem.code.toInt())
-                startActivity(intent)
-            } else {
-                Toast.makeText(
-                    this@TipoTarefaArmazemActivity,
-                    "Tipo de tarefa ainda não implementado", Toast.LENGTH_SHORT
-                ).show()
-            }
+            handleSigla(it)
         }
 
         rv_tipos_tarefa_armazem.apply {
@@ -107,6 +97,28 @@ class TipoTarefaArmazemActivity : AppCompatActivity() {
 
     private fun updateAdapter(tiposTarefaArmazem: List<TipoTarefaArmazem>) {
         tipoTarefaArmazemAdapter!!.update(tiposTarefaArmazem)
+    }
+
+    private fun handleSigla(sigla: String) {
+        when(sigla) {
+            TipoTarefaArmazemEnum.SEPARACAO.sigla -> {
+                // TODO Implementar
+            }
+            TipoTarefaArmazemEnum.CONSULTA_CODIGO_BARRAS.sigla -> {
+                // TODO Implementar
+            }
+            TipoTarefaArmazemEnum.ARMAZENAGEM.sigla -> {
+                val intent = Intent(this, TarefaArmazenagemActivity::class.java)
+                intent.putExtra(TarefaArmazenagemActivity.ARMAZEM_ID, armazem.code.toInt())
+                startActivity(intent)
+            }
+            else -> {
+                Toast.makeText(
+                    this@TipoTarefaArmazemActivity,
+                    "Tipo de tarefa ainda não implementado", Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
     }
 
     companion object {
