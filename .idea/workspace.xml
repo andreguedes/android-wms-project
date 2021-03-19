@@ -29,24 +29,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bae6ab10-2da9-41fc-b209-c43755c69ceb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/WMS.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/WMS.app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/shared/CodigoDeBarrasResponseModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/shared/DistribuicaoModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/shared/UserRequestArmazem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/shared/VolumeModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/presenter/tipo_tarefa/TipoTarefaArmazemContract.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/codigo_barras/CodigoBarrasActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/codigo_barras/CodigoBarrasAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/data/WmsRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/data/WmsRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/service/WmsApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/model/service/WmsApi.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/tipo_tarefa/TipoTarefaArmazemActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/tipo_tarefa/TipoTarefaArmazemActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/tipo_tarefa/TipoTarefaArmazemAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/deiviti/wms/mvp/view/ui/tipo_tarefa/TipoTarefaArmazemAdapter.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[7c468bf]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -57,12 +58,12 @@
       <list>
         <option value="valueResourceFile" />
         <option value="resourceFile" />
-        <option value="Kotlin Interface" />
-        <option value="layoutResourceFile" />
         <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Object" />
         <option value="Kotlin Enum" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -84,16 +85,17 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateKotlinClassDialog.RecentsKey">
-      <recent name="br.com.deiviti.wms.model" />
-      <recent name="br.com.deiviti.wms.ui.tipo_tarefa" />
-    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="br.com.deiviti.wms.mvp.presenter.tipo_tarefa" />
       <recent name="br.com.deiviti.wms.mvp.view.ui.login" />
       <recent name="br.com.deiviti.wms.mvp.presenter.login" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/values-en" />
+    </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="br.com.deiviti.wms.model" />
+      <recent name="br.com.deiviti.wms.ui.tipo_tarefa" />
     </key>
   </component>
   <component name="RunManager">
@@ -185,13 +187,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="306" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1612310057830">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="158" y="-922" key="#com.intellij.ide.util.MemberChooser" timestamp="1616113833399">
+      <screen x="-301" y="-1057" width="1920" height="1057" />
     </state>
     <state x="-1039" y="118" key="#com.intellij.ide.util.MemberChooser/-1366.23.1366.745/0.23.1280.777@-1366.23.1366.745" timestamp="1611794957971" />
     <state x="306" y="122" key="#com.intellij.ide.util.MemberChooser/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1612310057830" />
+    <state x="158" y="-922" key="#com.intellij.ide.util.MemberChooser/-301.-1057.1920.1057/0.23.1280.777@-301.-1057.1920.1057" timestamp="1616113833399" />
     <state x="1607" y="118" key="#com.intellij.ide.util.MemberChooser/1280.23.1366.745/0.23.1280.777@1280.23.1366.745" timestamp="1611015823906" />
     <state x="55" y="185" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1611103867834">
       <screen x="0" y="23" width="1280" height="777" />
@@ -202,15 +206,21 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="105" y="343" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611183721470" />
-    <state x="399" y="198" width="490" height="427" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1611185465797">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="298" y="-819" width="490" height="427" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1616115217387">
+      <screen x="-301" y="-1057" width="1920" height="1057" />
     </state>
     <state x="399" y="198" width="490" height="427" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611185465797" />
-    <state x="-1123" y="167" key="AndroidCreateResourceFileDialog" timestamp="1611793190577">
-      <screen x="-1366" y="23" width="1366" height="745" />
+    <state x="298" y="-819" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/-301.-1057.1920.1057/0.23.1280.777@-301.-1057.1920.1057" timestamp="1616115217387" />
+    <state x="41" y="-853" key="AndroidCreateResourceFileDialog" timestamp="1616110802906">
+      <screen x="-301" y="-1057" width="1920" height="1057" />
     </state>
     <state x="-1123" y="167" key="AndroidCreateResourceFileDialog/-1366.23.1366.745/0.23.1280.777@-1366.23.1366.745" timestamp="1611793190577" />
     <state x="228" y="173" key="AndroidCreateResourceFileDialog/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611101757033" />
+    <state x="41" y="-853" key="AndroidCreateResourceFileDialog/-301.-1057.1920.1057/0.23.1280.777@-301.-1057.1920.1057" timestamp="1616110802906" />
+    <state x="481" y="-744" key="AndroidCreateXmlResourceDialog" timestamp="1616110884781">
+      <screen x="-301" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="481" y="-744" key="AndroidCreateXmlResourceDialog/-301.-1057.1920.1057/0.23.1280.777@-301.-1057.1920.1057" timestamp="1616110884781" />
     <state width="1236" height="329" key="GridCell.Tab.0.bottom" timestamp="1611104457020">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -240,10 +250,11 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="424" y="217" key="refactoring.ChangeSignatureDialog/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611185024601" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1612399552845">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="157" y="-920" width="1005" height="920" key="search.everywhere.popup" timestamp="1616113224126">
+      <screen x="-301" y="-1057" width="1920" height="1057" />
     </state>
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/-1080.-834.1080.1897/0.23.1280.777@0.23.1280.777" timestamp="1612399552845" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/-1366.23.1366.745/0.23.1280.777@0.23.1280.777" timestamp="1611182199074" />
+    <state x="157" y="-920" width="1005" height="920" key="search.everywhere.popup/-301.-1057.1920.1057/0.23.1280.777@-301.-1057.1920.1057" timestamp="1616113224126" />
   </component>
 </project>

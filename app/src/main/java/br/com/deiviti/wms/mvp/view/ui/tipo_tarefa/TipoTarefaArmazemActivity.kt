@@ -7,17 +7,15 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import br.com.deiviti.wms.R
-import br.com.deiviti.wms.mvp.model.data.WmsRepository
 import br.com.deiviti.wms.mvp.model.shared.Armazem
 import br.com.deiviti.wms.mvp.model.shared.TipoTarefaArmazem
+import br.com.deiviti.wms.mvp.presenter.tipo_tarefa.TipoTarefaArmazemContract
+import br.com.deiviti.wms.mvp.presenter.tipo_tarefa.TipoTarefaArmazemPresenter
+import br.com.deiviti.wms.mvp.view.ui.codigo_barras.CodigoBarrasActivity
 import br.com.deiviti.wms.mvp.view.ui.tarefa_armazenagem.TarefaArmazenagemActivity
-import br.com.deiviti.wms.preferences.CustomPreferences
 import kotlinx.android.synthetic.main.activity_tipo_tarefa_armazem.*
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
-class TipoTarefaArmazemActivity : AppCompatActivity() {
+class TipoTarefaArmazemActivity : AppCompatActivity(), TipoTarefaArmazemContract.View {
 
     private lateinit var armazem: Armazem
     private var tokenExtra: String = ""
@@ -67,27 +65,7 @@ class TipoTarefaArmazemActivity : AppCompatActivity() {
     private fun initData() {
         tokenExtra = intent.getStringExtra(EXTRA_TOKEN) ?: ""
 
-        val tiposTarefaCallback = WmsRepository().getTiposTarefa(tokenExtra, armazem.code.toInt())
-        tiposTarefaCallback.enqueue(object : Callback<List<TipoTarefaArmazem>> {
-            override fun onResponse(
-                call: Call<List<TipoTarefaArmazem>>,
-                response: Response<List<TipoTarefaArmazem>>
-            ) {
-                if (response.isSuccessful) {
-                    response.body()?.let {
-                        updateAdapter(it)
-                    }
-                }
-            }
-
-            override fun onFailure(call: Call<List<TipoTarefaArmazem>>, t: Throwable) {
-                Toast.makeText(
-                    this@TipoTarefaArmazemActivity,
-                    "Erro ao carregar tipos de tarefas para o armazem ${armazem.name}",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
-        })
+        TipoTarefaArmazemPresenter(this).getTipoTarefas(tokenExtra, armazem)
     }
 
     private fun setTipoTarefaArmazemTitle(armazem: Armazem) {
@@ -95,8 +73,16 @@ class TipoTarefaArmazemActivity : AppCompatActivity() {
 //        title = CustomPreferences.getStringPreferences(this, CustomPreferences.USERNAME)
     }
 
-    private fun updateAdapter(tiposTarefaArmazem: List<TipoTarefaArmazem>) {
-        tipoTarefaArmazemAdapter!!.update(tiposTarefaArmazem)
+    override fun updateAdapter(tipoTarefaArmazemList: List<TipoTarefaArmazem>) {
+        tipoTarefaArmazemAdapter!!.update(tipoTarefaArmazemList)
+    }
+
+    override fun showErrorMessage() {
+        Toast.makeText(
+                    this@TipoTarefaArmazemActivity,
+                    "Erro ao carregar tipos de tarefas para o armazem ${armazem.name}",
+                    Toast.LENGTH_SHORT
+                ).show()
     }
 
     private fun handleSigla(sigla: String) {
@@ -105,7 +91,8 @@ class TipoTarefaArmazemActivity : AppCompatActivity() {
                 // TODO Implementar
             }
             TipoTarefaArmazemEnum.CONSULTA_CODIGO_BARRAS.sigla -> {
-                // TODO Implementar
+                val intent = Intent(this, CodigoBarrasActivity::class.java)
+                startActivity(intent)
             }
             TipoTarefaArmazemEnum.ARMAZENAGEM.sigla -> {
                 val intent = Intent(this, TarefaArmazenagemActivity::class.java)

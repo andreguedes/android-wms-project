@@ -24,6 +24,14 @@ interface WmsApi {
         @Path("id_armazem") idArmazem: Int
     ): Call<List<Armazenagens>>
 
+    @GET("armazem/{idArmazem}/consulta/{codigoBarras}")
+    fun getCodigodeBarras(
+        @Header("Authorization") token: String = TOKEN,
+        @Path("idArmazem")idArmazem: Int,
+        @Path("codigoBarras") codigoBarras: String,
+        @Body userRequestArmazem: UserRequestArmazem
+    ):Call<CodigoDeBarrasResponseModel>
+
     companion object {
         private const val TOKEN = "hjklaljkhaldo9a87d6219he1h0872678wqhdloajhbldkjah786t2eughwl"
     }
